@@ -28,7 +28,7 @@ The benefits of each data structure, implementation techniques, and unique optim
 
 
 ### 1. YouTube Data Management with B and B+ trees
-<img src="Images/B_trees.gif" align="center" width=50% height=50%>
+<img src="Images/B_trees.gif">
 
 Handling the massive and complicated data on YouTube, such as video metadata, user information, and interaction logs, requires the usage of B trees and B+ trees for data management. These trees have many benefits, including the ability to maintain balanced structures with logarithmic time complexity in operations such as insertion, deletion, and search—a crucial feature for datasets of considerable size and a has a space complexity of n. Because of their high branching factor, which lowers the tree's height and ensures effective data retrieval, they maximize disk access by decreasing I/O operations. Specifically, B+ trees are particularly good at range queries because of their linked list of leaf nodes, which facilitates sequential data access. In order to preserve equilibrium, new video metadata must be added to the B+ tree, nodes must be split, and keys must be promoted as needed. By combining nodes and redistributing keys, deletion makes sure the tree stays balanced. Key comparisons are used by effective search operations to move through the tree from the root to the leaf nodes.
     
