@@ -46,7 +46,7 @@ Here is the code for the Radix trie.
 
 ### 3. YouTube Data Management with Binomial Tree
 <p  align="center">
-    <img src="Images/Binomial_tree.gif" width=50% height=50%>
+    <img src="Images/Binomial_tree.gif" width="50%" height="50%">
 </p>
 A smart and effective way to handle big and dynamic datasets, such user interactions, video rankings, and recommendation algorithms, is to employ binomial trees for data management on YouTube. A particular kind of heap structure known as a binomial tree is made up of a group of binomial trees, each of which, in the case of binomial tree B of order k, has 2<sup>k</sup> nodes and a unique hierarchical structure that is similar to a perfect binary tree. By connecting these trees, a binomial heap is created that facilitates effective merging processes. Because it facilitates the quick union of heaps and the effective insertion, deletion, and extraction of minimal elements—all necessary for the upkeep of dynamic priority queues and real-time ranking systems—this structure is very beneficial to YouTube.The process of building and maintaining a binomial tree entails initializing separate binomial trees of different orders and connecting them to create a binomial heap. The process of adding a new element involves treating it at first as a single-node binomial tree and merging it with the heap by joining trees of the same order. Large-scale data processing may be handled effectively thanks to the logarithmic complexity of this merging procedure. Real-time data management tasks on YouTube require efficient traversal and fast access to the lowest or maximum element, which is made possible by the tree's hierarchical structure.
 
@@ -75,7 +75,7 @@ Here is the code for the Mo's Algorithm.
 
 ### 2. Efficient Range Query Processing with Segment Trees
 <p  align="center">
-    <img src="Images/segment_tree.gif" width=50% height=50%>
+    <img src="Images/segment_tree.gif" width="50%" height="50%">
 </p>
 A strong data structure for holding intervals or segments, segment trees provide quick range queries and updates. Segment trees can be used to process video metadata queries, such as those that filter videos based on upload dates, view counts, or ratings, in order to optimize the YouTube search functionality. In order to construct a segment tree for YouTube search, we start with an array of video information, in which each node denotes a certain range of videos. The array is recursively divided into two parts until each segment includes a single video, at which point the segments become the leaves of the segment tree. To facilitate effective searching and updating, each internal node keeps track of the aggregate data (such as the sum, minimum, and maximum) of its child nodes.
 Segment trees are very effective for handling dynamic video metadata because they can execute range queries and updates in O(log n) time. This is their main advantage. For example, the segment tree can swiftly obtain the relevant segments when a user searches for films published within a specific date range. It does this by going from the root of the tree to the leaves and aggregating the results along the way. This performance is especially useful for managing dynamic and frequent searches on big datasets, which are common in YouTube's extensive collection.
@@ -90,7 +90,7 @@ Here is the code for the Segment Trees.
 
 ### 3. Efficient Data Organization and Retrieval with Skip Lists
 <p  align="center">
-    <img src="Images/Skip_list.gif" width=50% height=50%>
+    <img src="Images/Skip_list.gif" width="50%" height="50%">
 </p>
 Skip lists are a probabilistic data structure that give an effective way to store and maintain sorted data, providing quick search, insertion, and deletion operations. For enhancing YouTube search capabilities, skip lists can be developed to retain organized collections of video metadata, such as watch counts, upload dates, or ratings. To design a skip list for YouTube search, we start by constructing a sequence of linked lists where each list works as a "express lane" to assist quicker traversal of the main list. Each entry in the skip list contains several forward pointers, which allows the search operation to skip over areas of the list, substantially speeding up the process.
 The fundamental benefit of skip lists is their average-case time complexity of O(log n) for search, insertion, and deletion operations, which is comparable to balanced trees but with easier implementation. For YouTube, this efficiency translates to faster retrieval of popular or trending videos, quick updates to video metadata, and seamless administration of dynamically changing datasets. For example, skip lists can rapidly find the top-n most viewed videos or filter videos within a given chronological range.
@@ -125,7 +125,7 @@ Despite these obstacles, A* search can significantly enhance YouTube's recommend
 
 ### 2. Bloom Filters for Efficient YouTube Video Recommendations
 <p  align="center">
-    <img src="Images/BloomFilters.gif" width=50% height=50%>
+    <img src="Images/BloomFilters.gif" width="50%" height="50%">
 </p>
 YouTube's video recommendation system can be improved by using bloom filters, a space-efficient probabilistic data structure, which can quickly determine whether a viewer has previously interacted with a specific video. This feature is essential to guaranteeing a varied and interesting user experience and avoiding repetitive recommendations. A Bloom filter operates by applying multiple hash functions to hash input components (video identifiers in this case) into a fixed-size bit array. A video's identifier is hashed and the associated bits in the array are set to 1 when it is viewed. To check if a video has been seen, the system hashes the video's identifier and verifies if all the corresponding bits in the Bloom filter are set to 1. If any bit is 0, the video is guaranteed not to have been viewed; if all bits are 1, there is a high probability the video has been viewed, though false positives are possible.
 
@@ -138,7 +138,7 @@ YouTube can make its recommendation engine work better by adding Bloom filters. 
 ## YouTube User Activity Tracking and Analytics
 ### 1. Leveraging Fenwick Trees for Efficient User Activity Tracking and Analytics
 <p  align="center">
-    <img src="Images/Fenwick.gif" width=50% height=50%>
+    <img src="Images/Fenwick.gif" width="50%" height="50%">
 </p>
 Fenwick Trees, sometimes referred to as Binary Indexed Trees, are very useful for monitoring and examining user activity on YouTube because they provide an effective method for handling prefix sum requests and updates. Fenwick Trees can be used to store and retrieve cumulative activity data over time in the YouTube context, where user interactions including views, likes, comments, and shares need to be continuously monitored. Let's say, for example, that we wish to monitor the total views a video gets each day. The number of views for each day can be represented as an entry in the Fenwick Tree.This structure allows us to efficiently update the view count for a specific day and quickly retrieve the cumulative view count for any range of days, which is crucial for generating time-series analytics and identifying trends.
 
@@ -154,7 +154,7 @@ Here is the code for the Fenwick trees.
 ## Ad Management
 ### 1.  Knapsack Algorithm for YouTube Ad Management 
 <p  align="center">
-    <img src="Images/Knapsack.gif" width=50% height=50%>
+    <img src="Images/Knapsack.gif" width="50%" height="50%">
 </p>
 Within the realm of YouTube ad management, the Knapsack algorithm offers a potent means of optimizing ad placements to maximize revenue while adhering to certain limitations. This algorithm excels at addressing situations where we have to maximize a certain value (like predicted income or engagement) while choosing a subset of objects (in this case, ads) that fit inside a given limit (like time slots or budget). The Knapsack algorithm has an O(N*LogN) time complexity, where N is the number of adverts. In order to accomplish this efficiency, the value-to-weight ratio for each advertisement is first determined. Then, using merge sort, which runs in O(N*LogN) time, these ratios are sorted in descending order. Because of the additional space needed for sorting, the space complexity is O(N). Putting this strategy into practice for YouTube ad management entails determining the weight or duration of each ad, as well as its worth based on variables like bid price and user engagement. Next, adverts are chosen by the Knapsack algorithm to best occupy the available spaces. By prioritizing high-value advertisements, this strategy makes sure that overall revenue is increased. Ad placement efficiency can be continuously improved by dynamically adjusting the value-to-weight ratios in response to real-time performance data. This allows the system to adapt to changing user behaviors and ad effectiveness.
  Here is the code for the Knapsack problem.
@@ -169,7 +169,7 @@ With an O(N*LogN) time complexity and an O(N) space complexity, the Knapsack alg
 ## Spam Detection
 ### 1. Suffix Trees for Spam Detection on YouTube
 <p  align="center">
-    <img src="Images/Suffix_tree.png" width=50% height=50%>
+    <img src="Images/Suffix_tree.png" width="50%" height="50%">
 </p>
 Because suffix trees are good at matching patterns, they are quite useful for finding recurring spam patterns in longer texts. Suffix trees, whose construction is based on Ukkonen's method, enable the creation of the tree in linear time, or O(n), where n is the input text's length. This enables speedy handling of massive data quantities. After the suffix tree is built, pattern searching within it is also efficient, with an O(m) time complexity, where m is the pattern length being searched. A suffix tree has an O(n) space complexity since it stores every suffix in the input text. This data format is very helpful for YouTube spam detection since it makes it possible to quickly find and report spam terms that are used often in comments, descriptions, and other text-heavy aspects. YouTube can effectively control and minimize spam content by utilizing suffix trees and Ukkonen's algorithm, resulting in a platform that is more aesthetically pleasing and easier to use. 
 Here is the code for the suffix trees.
@@ -177,7 +177,7 @@ Here is the code for the suffix trees.
 
 ### 2. KMP (Knuth-Morris-Pratt) Algorithm for Spam Detection on YouTube
 <p  align="center">
-    <img src="Images/kmp.gif" width=50% height=50%>
+    <img src="Images/kmp.gif" width="50%" height="50%">
 </p>
 Knuth-Morris-Pratt, or KMP, is a pattern matching method that is effective and useful for identifying particular spam phrases in text. It is very useful for real-time spam identification in big datasets because of its O(n + m) time complexity, where n is the text length and m is the pattern length. In order to generate a partial match table, or "prefix" table, the algorithm preprocesses the pattern. This table is then utilized to omit pointless comparisons during the search phase, hence expediting the matching process overall. KMP has an O(m) space complexity, which is equivalent to the amount of storage needed for the partial match table. KMP is hence a space-efficient choice for pattern matching applications. 
 
@@ -195,7 +195,7 @@ Here is the code for the Aho-Corasick algorithm.
 ## Trending Content Detection
 ###  1.Van Emde Boas (vEB) Trees for Trending Content Detection on YouTube
 <p  align="center">
-    <img src="Images/veb.png" width=50% height=50%>
+    <img src="Images/veb.png" width="50%" height="50%">
 </p>
 Because of their efficient operations, Van Emde Boas (vEB) Trees can be quite useful for identifying YouTube trending material. In comparison to many related data structures, such priority queues and binary search trees, a Van Emde Boas Tree supports search, successor, predecessor, insert, and delete operations in O(log log N) time. For YouTube to handle the enormous volume of data it processes in real-time, this efficiency is essential. Quickly determining which videos are the most or least popular is made possible by the vEB tree's O(1) time performance on minimum and maximum queries. Mapping the universe of video metrics (such as view counts, likes, and comments) to keys in the tree is the process of implementing a vEB tree for trending content detection. Trends may be retrieved instantly because user metrics are dynamically updated in the vEB tree as they engage with videos. This guarantees that there is little processing cost and the trending list stays current. Furthermore, YouTube can react quickly to new trends because of the structure's effective handling of predecessor and successor searches, which makes it easier to identify sudden changes in the popularity of content. The main disadvantage, however, is the enormous space complexity, O(U), where U is the universe size, which could necessitate large memory requirements. However, in a dynamic environment such as YouTube, the vEB tree's unmatched temporal efficiency makes it an appealing option for monitoring and identifying popular content.
 
@@ -205,7 +205,7 @@ Here is the code for the Van Emde Boas (vEB) Trees.
 ## Geographical Content Distribution
 ###  1.K-D Trees for Geographical Content Distribution on YouTube
 <p  align="center">
-    <img src="Images/Kdtree.gif" width=50% height=50%>
+    <img src="Images/Kdtree.gif" width="50%" height="50%">
 </p>
 Geographic coordinates and other multi-dimensional data can be efficiently managed and queried using k-dimensional trees, often known as K-D trees. K-D Trees can be effectively utilized in the YouTube context to manage range queries, like locating all users or content servers inside a given region. A point in a k-dimensional space is represented by each node in the tree; for latitude and longitude, k is usually 2. One dimension at a time, the dataset is split recursively along its median to create the tree. This preprocessing uses O(n) space and takes O(n log n) time. A K-D Tree can swiftly determine the closest content delivery network (CDN) server when a user requests a video by executing a range query with an O(n1-1/d + k) time complexity, where n denotes the number of points, d the number of dimensions, and k the number of results. K-D Trees' performance decrease in larger dimensions is a major drawback. K-D Trees are less effective for high-dimensional data since their query times approach linear complexity as the number of dimensions rises. Applications that need more than two or three dimensions, such as extra properties like server load or network latency, should be especially aware of this problem.
 Here is the code for the K-D Trees.
@@ -213,7 +213,7 @@ Here is the code for the K-D Trees.
 
 ###  2.R-Trees for Geographical Content Distribution on YouTube
 <p  align="center">
-    <img src="Images/rtree.gif" width=50% height=50%>
+    <img src="Images/rtree.gif" width="50%" height="50%">
 </p>
 However, R-Trees are more suited to handle geographical data, particularly when it comes to closest neighbor and range searches. R-Trees are a good choice for dynamic datasets like the user base of YouTube and CDN servers because they combine close objects and depict them using minimal bounding rectangles (MBRs). The geographic coordinates of users and CDN servers would be inserted into the tree in order to leverage R-Trees for geographical content distribution. Every node has a bounding box that includes all of its offspring. The R-Tree traverses from the root when a user requests a video, choosing branches that intersect the query range and effectively limiting the number of closest CDN servers. An R-Tree's worst-case insertion time is O(n), and its average search time is O(logMn), where M is the number of entries per node. By effectively managing higher-dimensional data through hierarchical bounding boxes, R-Trees reduce the dimensionality problem that K-D Trees encounter. This structure is essential for the constantly shifting geographic distribution of YouTube's user base and CDN sites because it not only supports effective range searches but also dynamic updates.
  Here is the code for the R Trees.
@@ -226,7 +226,7 @@ In order to optimize YouTube's notification system and guarantee timely and pert
 ## Backup
 ### 1. Merkle trees for Backup on YouTube
 <p  align="center">
-    <img src="Images/merkle.bin" width=50% height=50%>
+    <img src="Images/merkle.bin" width="50%" height="50%">
 </p>
 Merkle trees are a secure and effective way to confirm the integrity of big datasets, making them the perfect data structure for optimizing YouTube's backup system. Merkle Trees enable fast change detection and data consistency in the YouTube context, where large amounts of user data and video data necessitate consistent and dependable backups. The hash of a data block is contained in each leaf node of a Merkle Tree, while non-leaf nodes hold the hashes of their child nodes, forming a hierarchical structure that facilitates effective verification. It is crucial to acknowledge the computational constraints: there isn't a Merkle tree traversal algorithm that can be created that uses less space and less time than O(log2(N)). Accordingly, logarithmic space and time are needed for the traversal process, despite the fact that Merkle Trees are effective at confirming the accuracy of data. Despite this, Merkle Trees are nevertheless useful for backup systems since they make it possible to verify changes in data partially without having to reprocess the full dataset. This makes backup procedures more efficient and guarantees the dependability of YouTube's enormous data store.
 
@@ -237,7 +237,7 @@ For YouTube to manage its massive amount of user-generated material, effective f
 
 ## API Throttling on YouTube
 <p  align="center">
-    <img src="Images/tokenbucket.gif" width=50% height=50%>
+    <img src="Images/tokenbucket.gif" width="50%" height="50%">
 </p>
 In order to maintain consistent performance and equitable usage, YouTube's massive and dynamic traffic must be managed through effective API throttling. The Token Bucket Algorithm is especially well-suited for this task because of its capacity to strike a compromise between sustaining a consistent average rate and permitting spurts of requests. It is perfect for managing the diverse traffic patterns typical of a platform like YouTube because of its efficiency and adaptability. This is enhanced by the Sliding Window Counter Algorithm, which provides an accurate and effective way to uphold constant rate restrictions without the burstiness connected with fixed windows. It achieves a balance between accuracy and resource efficiency by aggregating counters across smaller intervals. Utilizing services meshes like Istio or Redis for Distributed Rate Limiting is essential for large-scale distributed systems. By spreading the rate-limiting logic across several nodes, this method achieves fault tolerance and scalability while managing large traffic volumes and avoiding single points of failure. YouTube can maintain strong API request management, guaranteeing stability and improving the user experience overall, by incorporating these sophisticated algorithms.
 
@@ -248,7 +248,7 @@ Segment trees provide a strong way to manage dynamic user interactions and real-
 
 ### 2. Efficient Live Streaming Management with AVL Trees
 <p  align="center">
-    <img src="Images/avl.gif" width=50% height=50%>
+    <img src="Images/avl.gif" width="50%" height="50%">
 </p>
 Another essential data structure for YouTube live streaming management is an AVL tree. This is especially true for keeping dynamic and well-balanced datasets like active streams, user interactions, and chat messages. Because of its balanced structure, AVL trees always have a height that is logarithmic in relation to the number of elements. O(log n) is the time complexity for insertion, deletion, and lookup operations in AVL trees, while O(n) is the space complexity. This ensures steady and effective performance even with varying user activity. A seamless and responsive experience for all users is ensured by maintaining this balance in dynamic live streaming environments where constant user interactions and real-time data updates are the norm.
 
@@ -258,14 +258,14 @@ Another essential data structure for YouTube live streaming management is an AVL
 
 ### 1. Ford-Fulkerson Algorithm for Optimized Resource Allocation on YouTube
 <p  align="center">
-    <img src="Images/ford_fulkerson.gif" width=50% height=50%>
+    <img src="Images/ford_fulkerson.gif" width="50%" height="50%">
 </p>
 YouTube resource allocation can be optimized by the standard Ford-Fulkerson algorithm, which is designed to solve the maximum flow problem in a flow network. Until no more augmenting paths can be found, this method gradually finds augmenting paths from the source to the sink and raises the flow. To locate these paths in the residual graph, the implementation employs a depth-first search (DFS) or breadth-first search (BFS). The technique for determining augmenting pathways determines the temporal complexity of Ford-Fulkerson. The complexity when utilizing DFS is O(E * f_max), where f_max is the maximum flow value and E is the number of edges in the graph. Because f_max is unlimited, this may result in subpar performance in situations with enormous capacity. Because of the residual capacity and the storing of the graph structure, the space complexity is O(V + E), where V is the number of vertices and E is the number of edges. An important limitation of the Ford-Fulkerson method is that it might not end, creating an indefinite loop, if the augmenting paths selected do not effectively lower the residual capacities or if the edge capacities are illogical. This is especially troublesome in real-world situations where reliable and efficient performance is needed, like YouTube's resource distribution. 
 
 
 ### 2. Edmonds-Karp Algorithm for Optimized Resource Allocation on YouTube
 <p  align="center">
-    <img src="Images/edmondsKarp.gif" width=50% height=50%>
+    <img src="Images/edmondsKarp.gif" width="50%" height="50%">
 </p>
 The Ford-Fulkerson method's inefficiencies are addressed by the Edmonds-Karp algorithm, which uses BFS to determine the shortest augmenting pathways in terms of the number of edges. In real-world applications like YouTube resource allocation, this optimization makes sure that the paths selected minimize the greatest number of edges visited, resulting in more effective flow augmentation and improved speed. The Edmonds-Karp algorithm has an O(V * E2) time complexity, where V and E are the number of vertices and edges, respectively. By determining the shortest augmenting paths, this method ensures polynomial time complexity, which is an improvement over the general Ford-Fulkerson method. Because of the residual capacity and graph storage needs, the space complexity is still O(V + E). The Edmonds-Karp algorithm provides better predictable performance and reduces the possibility of non-termination by employing BFS. Because of this, it is especially well suited for YouTube's resource allocation, where trustworthy and effective algorithms are essential. The structured approach of Edmonds-Karp effectively addresses the primary flaw in the Ford-Fulkerson algorithm, which is its capacity for infinite looping with irrational numbers. This makes Edmonds-Karp a more reliable option for real-world applications.
 
