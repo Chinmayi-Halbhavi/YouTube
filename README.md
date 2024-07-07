@@ -20,6 +20,8 @@ This page hosts:
 4. Conclusion
 
 
+![Alt text](Images/YouTube.png)
+
 ## Data Management on YouTube
 YouTube handles enormous volumes of data, from user interactions and video metadata to recommendation engines and search functions. As such, efficient data management is essential to the platform's seamless functioning and scalability. In order to manage this varied and dynamic data with the best possible performance, scalability, and efficiency, selecting the appropriate data structure is essential. We examine how sophisticated data structures can greatly improve YouTube's data management in this portfolio. We tackle the particular difficulties in managing YouTube's large datasets by utilizing Data Structures and Algorithms (DSA). We explore the use of Radix Tries for quick key lookups and autocomplete, Binomial Trees for dynamic priority queue management and ranking systems, and B and B+ trees for organized data storage and effective querying.
 The benefits of each data structure, implementation techniques, and unique optimizations made to satisfy YouTube's large data requirements are carefully examined, highlighting the crucial role that wise data structure selection has in the platform's success.
