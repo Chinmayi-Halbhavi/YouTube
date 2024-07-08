@@ -314,4 +314,9 @@ The Ford-Fulkerson method's inefficiencies are addressed by the Edmonds-Karp alg
 
 Here is the code for the [Edmonds-Karp](https://github.com/Chinmayi-Halbhavi/YouTube/tree/main/Codes/Edmonds%20Karp).
 
+## References
+[1] Khan, M. Laeeq, and Aqdas Malik. "Researching YouTube: Methods, tools, and analytics." The sage handbook of social media research methods (2022): 651-663.
 
+[2] Alias, Norlidah, et al. "A content analysis in the studies of YouTube in selected journals." Procedia-Social and Behavioral Sciences 103 (2013): 10-18.
+
+[3] Analyzing YouTube's Marketing Strategy: A Comprehensive Study https://www.coursesidekick.com/marketing/3279320 
