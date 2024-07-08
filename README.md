@@ -17,9 +17,11 @@ This page hosts:
 1. Introduction
 2. Market Analysis
 3. Why YouTube as topic for Portfolio?
-4. Business Cases of YouTube
+4. Objectives
+5. Business Cases of YouTube
 
 # Introduction
+<img src="Images/YoutubeArchitecture.png" >
 
 The world's most popular video-sharing website, YouTube was founded in 2005 and was purchased by Google for $1.65 billion in 2006. With 500 hours of content submitted every minute, YouTube has grown from being a platform for amateur and home videos to hosting over five billion videos. YouTube's significant contribution to contemporary digital communication and its ability to shape popular culture are highlighted by its startling rate of expansion. Thanks to features like likes, shares, comments, and subscriptions, a vibrant community is fostered by the platform, which lets users upload, browse, rate, and upload again. Further improving social connectivity is integration with Google+. With a focus on sponsored content, YouTube Red subscription services, and ad income, the platform offers a variety of revenue streams. The introduction of high-definition videos has attracted a wide array of content creators, from vloggers and gamers to major entertainment and news channels.
 
@@ -39,6 +41,11 @@ The emphasis on interesting video content by YouTube has revolutionized digital 
 
 YouTube offers a rich and complicated environment in which to use and demonstrate different data structures and algorithms, which is why I chose it for my portfolio (DSA). YouTube poses distinct problems in terms of effectively managing data, optimizing resource allocation, and guaranteeing seamless live streaming due to its extensive user base and massive content production volume. The platform's ongoing requirement for effective spam detection, segment trees, and search and retrieval mechanisms fits in perfectly with the real-world uses of sophisticated DSA techniques like suffix trees and Aho-Corasick algorithms. I can show how these algorithms can improve video recommendations, distribute material more efficiently, and boost platform performance by concentrating on YouTube, which is a great way to illustrate how DSA can be used to real-world issues.
 
+# Objectives
+1. Improve user experience and efficiency by using cutting-edge algorithmic techniques to solve practical issues with YouTube's infrastructure.
+2. Implement scalable solutions for YouTube's platform to demonstrate technical skill in system design and problem-solving.
+3. Through the use of complex data structures and algorithms, address modern issues in digital content management, such as spam detection and geographical content distribution.
+4. Use advanced algorithms to spur innovation and boost performance as you investigate and suggest solutions for upcoming problems in the YouTube ecosystem.
 
 
 <img src="Images/YouTube.png" >
